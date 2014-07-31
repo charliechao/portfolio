@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Random phrase generator</title>
+<style>
+#phrase {
+text-align: center;
+font-size: 50px;
+background-color: #2bd0ff;
+}
+
+</style>
+
+</head>
+<body>
+<button onclick="makePhrases()">Generate</button>
+<div id="phrase"> Hello</div>
+
+<script>
+
+ function makePhrases(){
+// Created 3 arrays in a shortcut form
+var words1 = ["You", "eat", "meat", "swim", "sweet"];
+var words2 = new Array("I", "run", "sleep", "sunday", "fish");
+var words3 = ["Dog", "jump", "basketball", "dotcom", "yoobee"];
+// Created 3 random varibles
+var rand1 = Math.floor(Math.random() * words1.length);
+var rand2 = Math.floor(Math.random() * words2.length);
+var rand3 = Math.floor(Math.random() * words3.length);
+
+var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3];
+var phraseElement = document.getElementById("phrase");
+phraseElement.innerHTML = phrase;
+ }	
+
+
+</script>	
+</body>
+</html>
+

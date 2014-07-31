@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Guide Lines</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+   
+   
+ 
+  </head>
+  <body>
+    <!-- Modal -->
+<div id="myModal" class="reveal-modal" data-reveal>
+  <h2>Description</h2>
+  <p>This is a style guide line I made for my fictional company-C2 Design. I utilized video and audio for presentation purposes. It contains three slides, each running for about 1 minute.</p>
+  <h2>Time Frame</h2>
+  <p>Week 7</p>
+  <h2>Key Words</h2>
+  <p>HTML5, Jquery & Jquery UI, Foundation, Typeface, color theory </p>
+  <h2 style="color:red;">WARNING</h2>
+  <p>This presentation contains awesome music, please adjust volume accordingly!</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+    <!-- Showing on start -->
+  <video autoplay loop >
+  <source src="assets/background1.mp4" type="video/mp4">
+  <source src="assets/background1.webm" type="video/webm">
+    Your browser doesn't support video tag.
+  </video>  
+
+    <!-- Play on click GO!!! button   -->
+  <audio preload="auto" id="sweet"><source src="assets/sweet.mp3" type="audio/mp3">
+  </audio>
+
+   <div class="row landingpage" >
+        <div class="small-12 columns text-center"><a href="#" class="button start-button" id="button-center">START!!!</a></div>
+      </div>  
+      <!-- End of showing on start -->
+
+    <!-- Toggle hiding and showing begin here     -->
+     <!-- page 1 -->
+
+  <div class="row full page1">
+
+    <div class="medium-4 columns panel"><img src="img/logo.png" alt="logo"></div>
+
+    <div class="medium-4 columns panel text-center"><h1><span id="c">C</span><span id="two">2</span> <br> <span id="design">Design</span></h1><h1> &#169 <span class="c">C</span>harlie <span class="c">C</span>hao</h1></div>
+
+    <div class="medium-4 columns panel">
+      <h1 class="text-center">C2 Design Style Guide</h1>
+      <p>This brand guideline sets the basic rules for our company when it comes to marketing and communicating our brand to our customers and general public. When used appropriately and consistently, our brand expression will solidify our standing in customers’ and prospects’ minds.</p> <br>
+      <h2 class="text-center">INTEGRITY</h2>
+      <h2 class="text-center">VALUE</h2>
+      <h2 class="text-center">PARTNERSHIP</h2>
+      <p>are the core elements of our brand.</p> <br>
+      <p>At C2 design, we design and build websites and applications with integrity. We thrive on providing the best value to our clients through close partnership.</p>
+
+    </div>
+  </div>
+   <!-- End of page 1 -->
+
+   <!-- page 2 -->
+
+   <div class="row full page2">
+     <div class="small-6 columns text-center panel">
+      <h1 class="font">Font</h1>
+      <h3>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h3>
+      <h3>a b c d e f g h i j k l m n o p q r s t u v w x y z</h3>
+      <h3>1 2 3 4 5 6 7 8 9 0</h3>
+      <h3>! @ # $ % * ^ & : "</h3>
+    </div>
+    <div class="small-6 columns panel">
+      <h1 class="font">Font Options</h1>
+      <ul>
+        <li>The telegrama font style has been chosen for our brand. It should be implemented across all media platforms.</li>
+        <li>This font is the typeface of the original idea for the relationship between Pixe and Smoo. </li>
+        <li>It is good for Display, High-tech, Industrial, Monospaced, Pixel, Programming, Typewriter</li>
+      </ul>
+
+    </div>
+   </div>
+    <!-- End of page 2   -->
+
+    <!-- Page 3 -->
+    <div class="row page3 text-center">
+      <div class="small-12 columns text-center">
+      <h1>C<span class="o">O</span><span id="l">L</span><span class="o">O</span>R</h1>
+      </div>
+      <div class="row">
+        <div class="medium-4 columns"><span id="red">Red #ff0000 rgb(255, 0, 0)</span><div class="red"></div></div>
+        <div class="medium-4 columns"><span>Black #000000 rgb(255, 0, 0)</span><div class="black"></div></div>
+        <div class="medium-4 columns"><span>White #ffffff rgb(255, 255, 255)</span><div class="white"></div></div>
+      </div>
+      <p>Keep it <span>SIMPLE</span></p>
+      <p>Keep it <span>TRUE</span></p>
+    </div>
+    <!-- End of page 3 -->
+
+    
+  
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js">
+  </script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- initialize foundation -->
+    <script>
+      $(document).foundation();
+    </script>
+
+     <!-- initialize modal  -->
+   <script type="text/javascript">
+    $("#myModal").foundation('reveal', 'open');
+  //   </script>
+  </body>
+</html>

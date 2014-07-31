@@ -1,0 +1,20 @@
+body{
+margin: 0;
+}
+
+#home > div.ui-content {
+padding: 0;
+}
+
+#home > div.ui-content > p {
+margin: 0;
+}
+
+#home > div.ui-content > p:nth-child(3) > a {
+margin-top:0;
+}
+
+#home > div.ui-content > p:nth-child(6) > a {
+margin-bottom: 0;
+}
+

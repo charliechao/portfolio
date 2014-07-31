@@ -1,0 +1,84 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>YooBee Mobile</title> 
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/idangerous.swiper.3dflow.css">
+	<link rel="stylesheet" href="css/custom.css">	
+</head> 
+
+	
+<body> 
+
+<div class="homepagewrapper">
+<!-- Start of first page: #one -->
+<div class="page-wrapper">
+<div data-role="page" id="home">
+
+ <!-- img slider -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">      
+     <div class="swiper-slide" > 
+        <img src="img/img1.jpg" alt="">	
+      </div> 
+      <div class="swiper-slide">
+       <img src="img/img2.jpg" alt="">	
+      </div>   
+      <div class="swiper-slide"> 
+        <img src="img/img3.jpg" alt="">	
+      </div>
+  </div>
+</div> 
+<!-- End of img slide -->	
+	
+	<div data-role="content" >		
+		<p><a href="tel:0800 66 55 44" data-role="button" data-theme="e">CALL <img src="img/yoobee.png" alt=""> NOW</a></p>
+		<input type="search" name="search-mini" id="search-mini" value="" data-mini="true"/>
+		<p><a href="#two" data-role="button" data-theme="b">ABOUT <img src="img/yoobee.png" alt=""></a></p>	
+		<p><a href="#two" data-role="button" data-theme="b">COURSES</a></p>	
+		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop" data-theme="b">INTERNATIONAL STUDENTS</a></p>
+		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop" data-theme="b">STUDENT WORK</a></p>
+	</div>
+	
+	<!-- footer -->
+	<footer data-role="footer" data-theme="d" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#home"data-icon="home" data-theme="a">Home</a></li>
+				<li><a href="#basic"data-icon="about" data-theme="a">Contacts</a></li>
+				<li><a href="#newtest"data-icon="info" data-theme="a">Apply</a></li>
+				</ul>
+		</nav>
+	</footer><!-- /footer -->
+</div><!-- /page one -->
+</div>
+</div> <!-- End of page wrapper -->
+
+
+	<!-- Jquery & Jquery & sider plugins Mobile -->
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+<script src="js/idangerous.swiper.js"></script>
+<script src="js/idangerous.swiper.3dflow.js"></script>
+<script src="js/custom.js"></script>
+
+
+
+	<!-- activate slider -->
+<script type="text/javascript">
+$(function(){
+  var mySwiper = $('.swiper-container').swiper({
+    //Your options here:
+    mode:'horizontal',
+    loop: true,    
+  });
+})
+</script>
+
+</body>
+</html>

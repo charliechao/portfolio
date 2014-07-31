@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Solution on Codewars</title>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+  <link href="../movie/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body{
+    background-color: rgba(221, 192,95, 0.3);
+    }
+
+   </style>
+  
+</head>
+<body>
+  <!-- Auto Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-    labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Code Page</h4>
+      </div>
+      <div class="modal-body">
+        <h2>Description</h2>
+  <p>This page contains some of my codewars solutions and various snippets I have been writing through the bootcamp.</p>
+  <h2>Time Frame</h2>
+  <p>Week 5 to Week 10</p>
+  <h2>Key Words</h2>
+  <p>VanillaJS, problem solving </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of modal -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+<h1>Snippets</h1>
+
+  <p><a href="snippets/autoColorChange.html" target="_blank">Auto color changer</a></p>
+  <p><a href="snippets/sticky.html" target="_blank">sticky notes</a></p>
+  <p><a href="snippets/generator.html" target="_blank">Random phrase generator</a></p>
+<hr>
+
+
+  <h1>Codewars Solutions</h1>
+<section>
+<h2>Problem 1 : Naughty or Nice?</h2>
+<p>Description:
+
+Happy Holidays fellow Code Warriors!<br/>
+
+It's almost Christmas! That means Santa's making his list, and checking it twice. Unfortunately, Santa's Javascript and CoffeeScript Elves accidentally mixed the Naughty and Nice list together! Santa needs your help to save Christmas!<br/>
+
+Save Christmas!<br/>
+
+Santa needs you to write two functions, getNiceNames and getNaughtyNames. Both of the functions accept an array of objects. getNiceNames returns an array containing only the names of the nice people, and getNaughtyNames returns an array containing only the names of the naughty people. Return an empty array [] if the result from either of the functions contains no names.<br/>
+
+The objects in the passed in array will represent people. Each object contains two properties: name and wasNice.<br/>
+name - The name of the person<br/>
+wasNice - True if the person was nice this year, false if they were naughty<br/>
+
+Person Object Examples:<br/>
+<code>
+{ name: 'Warrior reading this kata', wasNice: true } 
+{ name: 'xDranik', wasNice: false }
+
+Test Examples:
+
+getNiceNames( [
+    { name: 'Warrior reading this kata', wasNice: true },
+    { name: 'xDranik', wasNice: false },
+    { name: 'Santa', wasNice: true }
+] )
+// => returns [ 'Warrior reading this kata', 'Santa' ]
+
+getNaughtyNames( [
+    { name: 'Warrior reading this kata', wasNice: true },
+    { name: 'xDranik', wasNice: false },
+    { name: 'Santa', wasNice: true }
+] )
+// => returns [ 'xDranik' ]<br/></code><br/>
+Want to be in one of the lists?<br/>
+
+The tests I'll be running includes an array of naughty and nice names. If you'd like to be in either of the lists, let me know in the discussion page :). I'll update it at the end of each day.<br/>
+
+FundamentalsHacking HolidaysArrays</p>
+
+<h2>My code</h2>
+<code>
+function getNiceNames(people){<br/>
+  var aNicePeople = [];<br/>
+for (var i = 0; i< people.length; i++) {<br/>
+  if (people[i].wasNice ===true) {<br/>
+    aNicePeople.push(people[i].name);<br/>
+    }<br/>
+    
+  }<br/>
+  return aNicePeople;<br/>
+}<br/>
+
+function getNaughtyNames(people){<br/>
+   var aNaughtyPeople = [];<br/>
+for (var i = 0; i< people.length; i++) {<br/>
+  if (people[i].wasNice ===false) {<br/>
+    aNaughtyPeople.push(people[i].name);<br/>
+    }<br/>
+    
+  }<br/>
+  return aNaughtyPeople;<br/>
+}<br/>
+</code>
+</section>  
+<hr>
+<section>
+  <h2>Problem 2:Functional Addition</h2>
+  <p>Create a function add(n) which returns a function that always adds n to any number<br/>  
+<code>
+var addOne = add(1);<br/>
+addOne(3); // 4<br/>
+
+var addThree = add(3);<br/>
+addThree(3); // 6<br/></code></p>
+  <h2>My code</h2>
+  <p><code>function add(n) {<br/>
+  return function (x) {<br/>
+    return x + n;<br/>
+  }
+}</code></p>
+
+</section>
+<hr>
+<section>
+  <h2>Problem 3: Sort the Gift Code</h2>
+  <p>Description:<br/>
+
+Happy Holidays fellow Code Warriors!<br/>
+
+Santa's senior gift organizer Elf developed a way to represent up to 26 gifts by assigning a unique alphabetical character to each gift. After each gift was assigned a character, the gift organizer Elf then joined the characters to form the gift ordering code.<br/>
+
+Santa asked his organizer to order the characters in alphabetical order, but the Elf fell asleep from consuming too much hot chocolate and candy canes! Can you help him out?<br/>
+
+Sort the Gift Code<br/>
+
+Write a function called sortGiftCode (sort_gift_code in Ruby) that accepts a string containing up to 26 unique alphabetical characters, and returns a string containing the same characters in alphabetical order.<br/>
+
+Examples:<br/>
+
+Javascript/CoffeeScript:<br/>
+<code>
+sortGiftCode( 'abcdef' );//=> returns 'abcdef'<br/>
+sortGiftCode( 'pqksuvy' );//=> returns 'kpqsuvy'<br/>
+sortGiftCode( 'zyxwvutsrqponmlkjihgfedcba' );//=> returns <br/>'abcdefghijklmnopqrstuvwxyz'<br/> </code></p>
+  <h2>My Code</h2>
+  <code>function sortGiftCode(code){<br/>
+return   code.split("").sort().join(""); <br/>     
+  
+}</code>
+</section>
+<hr>
+<section>
+    <h2>Problem 4: String ends with?</h2>
+    <p>Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).<br>
+
+Examples:<br>
+<code>
+solution('abc', 'bc') // returns true<br>
+solution('abc', 'd') // returns false<br></code></p>
+    <h2>My Code</h2>
+    <code>function solution(str, ending){<br>
+  if (str.substring(str.length-ending.length) === ending) {<br>
+    return true;<br>
+  } else {<br>
+    return false;<br>
+  }
+  
+}</code>
+  </section>
+  <hr>  
+<section>
+  <h2>Problem 5: Name Array Capping</h2>
+  <p>Description:<br/>
+
+Create a method that accepts an array of names, and returns an array of each name with its first letter capitalized.<br/>
+
+example<br/>
+<code>
+capMe(['jo', 'nelson', 'jurie'])     // returns ['Jo', 'Nelson', 'Jurie']<br/>
+capMe(['KARLY', 'DANIEL', 'KELSEY']) // returns ['Karly', 'Daniel', 'Kelsey']<br/></code></p>
+  <h2>My Code</h2>
+  <code>function capMe(names) {<br/>
+    var aCapitalNames = [];<br/>
+    
+    for (var i=0; i< names.length;i++) {<br/>
+    var sCapitalNames = names[i].substring(0,1).toUpperCase() + <br/>    
+    names[i].substring(1).toLowerCase();<br/>
+    
+    aCapitalNames.push(sCapitalNames);<br/>
+    
+    }<br/>
+  
+  return aCapitalNames;<br/>
+}</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 6: No oddities here</h2>
+  <p>Description:<br>
+
+Write a small function that returns the values of an array that are not odd.<br>
+
+All values in the array will be integers. Return the good values in the order they are given.<br>
+
+<code>function noOdds( values )</code></p>
+  <h2>My Code</h2>
+  <code>function noOdds( values ){<br>
+  var aNotOddValues = [];<br>
+  for (var i=0; i< values.length ;i++) {<br>
+  if (values[i]%2 ===0) {<br>
+    aNotOddValues.push(values[i]);<br>
+    }<br>
+    
+ } <br>
+  return aNotOddValues;<br>
+}</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 7: Return the Missing Element</h2>
+  <p>Description: <br>
+
+Fellow code warrior, we need your help! We seem to have lost one of our array elements, and we need your help to retrieve it! Our array, superImportantArray, was supposed to contain all of the integers from 0 to 9 (in no particular order), but one of them seems to be missing.<br>
+
+Write a function called getMissingElement that accepts an array of unique integers between 0 and 9 (inclusive), and returns the missing element.<br>
+
+Examples:<br>
+<code>
+getMissingElement( [0, 5, 1, 3, 2, 9, 7, 6, 4] ) // returns 8<br>
+getMissingElement( [9, 2, 4, 5, 7, 0, 8, 6, 1] ) // returns 3<br></code></p>
+  <h2>My Code</h2>
+  <code>function getMissingElement(superImportantArray){<br>
+    
+    return 45 - superImportantArray.reduce(function(a,b) {<br>
+        return a+b;<br>
+    });<br>
+  
+}</code>
+</section>
+<hr>
+<section>
+  <h2>Problem 8: Simple elevator</h2>
+  <p>Description: <br>
+
+There is a house with 4 levels. In that house there is an elevator. You can program this elevator to go up or down, depending on what button the user touches inside the elevator.<br>
+
+levels can be only numbers: 0,1,2,3 buttons can be strings: '0','1','2','3' possible return values are numbers: -3,-2,-1,0,1,2,3<br>
+
+If the elevator is on the ground floor(0th level) and the user touches button '2' the elevator must go 2 levels up, so our function must return 2.<br>
+
+If the elevator is on the 3rd level and the user touches button '0' the elevator must go 3 levels down, so our function must return -3.<br>
+
+If the elevator is on the 2nd level, and the user touches button '2' the elevator must remain on the same level, so we return 0.<br>
+
+We cannot endanger the lives of our passengers, so if we get erronous inputs, our elevator must remain on the same level. So for example goto(2,'4') must return 0, because there is no button '4' in the elevator. goto(4,'0') must return 0, because there is no level 4. goto(3,undefined) must return 0. goto(undefined,'2') must return 0. goto([],'2') must return 0 because the type of the input level is array instead of a number. goto(3,{}) must return 0 because the type of the input button is object instead of a number.<br></p>
+  <h2>My Code</h2>
+  <code>function goto(level,button){<br>
+    
+    var l = [0,1,2,3];<br>
+    var b = ["0","1","2","3"];<br>
+    if (l.indexOf(level) > -1 && b.indexOf(button)> -1) {<br>
+    return Number(button) - level;<br>
+    } else {<br>
+    return 0;<br>    
+    }<br>
+}
+  </code>
+</section>
+<hr>
+<section>
+  <h2>Problem 9: 99 bottles of beer</h2>
+  <p>Description: <br>
+
+Instructions<br>
+
+Write a function sing that returns the lyrics for the song 99 Bottles of Beer as a an array.<br>
+
+Lyrics<br>
+
+You can find the complete lyrics here.<br>
+
+99 bottles of beer on the wall, 99 bottles of beer.<br>
+Take one down and pass it around, 98 bottles of beer on the wall.<br>
+
+98 bottles of beer on the wall, 98 bottles of beer.<br>
+Take one down and pass it around, 97 bottles of beer on the wall.<br>
+
+// and so on ...<br>
+
+3 bottles of beer on the wall, 3 bottles of beer.<br>
+Take one down and pass it around, 2 bottles of beer on the wall.<br>
+
+2 bottles of beer on the wall, 2 bottles of beer.<br>
+Take one down and pass it around, 1 bottle of beer on the wall.<br>
+
+1 bottle of beer on the wall, 1 bottle of beer.<br>
+Take one down and pass it around, no more bottles of beer on the wall.<br>
+
+No more bottles of beer on the wall, no more bottles of beer.<br>
+Go to the store and buy some more, 99 bottles of beer on the wall.<br>
+Result
+
+The returned result should be an array of all the lines in the song.<br>
+
+Example<br>
+<code>
+['99 bottles of beer on the wall, 99 bottles of beer.',<br>
+'Take one down and pass it around, 98 bottles of beer on the wall.',<br>
+'98 bottles of beer on the wall, 98 bottles of beer.',<br>
+// and so on ...<br>
+'3 bottles of beer on the wall, 3 bottles of beer.',<br>
+'Take one down and pass it around, 2 bottles of beer on the wall.',<br>
+'2 bottles of beer on the wall, 2 bottles of beer.',<br>
+'Take one down and pass it around, 1 bottle of beer on the wall.',<br>
+'1 bottle of beer on the wall, 1 bottle of beer.',<br>
+'Take one down and pass it around, no more bottles of beer on the wall.',<br>
+'No more bottles of beer on the wall, no more bottles of beer.',<br>
+'Go to the store and buy some more, 99 bottles of beer on the wall.'];<br></code></p>
+  <h2>My Code</h2>
+  <code>var sing = function () {<br>
+  var var1=99;<br>
+  var var2=98;<br>
+  var lyrics = [];<br>
+  
+  if (var2>0) {<br>
+     for (var1 = 99, var2=98; var1 >1, var2>1; var1--, var2--) {<br>
+       lyrics.push(var1 + " bottles of beer on the wall, "+ var1 + " bottles of beer.")<br>
+       lyrics.push ( "Take one down and pass it around, "<br>
+     + var2 + " bottles of beer on the wall.");<br>
+     }<br>
+  }<br>
+  lyrics.push ("2 bottles of beer on the wall, 2 bottles of beer.")<br>
+    lyrics.push ("Take one down and pass it around, 1 bottle of beer on the wall.");<br>
+    
+    lyrics.push ("1 bottle of beer on the wall, 1 bottle of beer.")<br>
+    lyrics.push ("Take one down and pass it around, no more bottles of beer on the wall.");<br>
+    
+    lyrics.push ("No more bottles of beer on the wall, no more bottles of beer.")<br>
+    lyrics.push ("Go to the store and buy some more, 99 bottles of beer on the wall.")<br>
+    
+    return lyrics;<br>
+  
+     }<br>
+   
+</code>
+</section>
+<hr>
+<section>
+  <h2>Problem 10: Basic JS - Building a calculator</h2>
+  <p>Description: <br>
+
+Let's build a calculator.<br>
+
+This is very basic Javascript kata.<br>
+
+The test expects you to provide a Calculator object with the following methods:<br>
+<code>
+Calculator.add()<br>
+Calculator.subtract()<br>
+Calculator.multiply()<br>
+Calculator.divide()<br></code></p>
+  <h2>My Code</h2>
+  <code>var Calculator = {<br>
+  add: function(a,b) {return a+b},<br>
+  subtract: function(a,b) {return a-b},<br>
+  multiply: function(a,b){return a*b},<br>
+  divide:function(a,b){ return b ===0 ? false : a/b}<br>
+
+};</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 11: Basic JS - Calculating averages</h2>
+  <p>Description: <br>
+
+Let's build a calculator that can calculate the average for an arbitrary number of arguments.<br>
+
+The test expects you to provide a Calculator object with an average method:<br>
+
+<code>Calculator.average()</code> <br>
+The test also expects that when you pass no arguments, it returns 0. The arguments are expected to be integers.<br>
+
+It expects Calculator.average(3,4,5) to return 4.<br></p>
+  <h2>My Code</h2>
+  <code>var Calculator = {<br>
+ average: function() {<br>
+     if(arguments.length === 0) {<br>
+         return 0;<br>
+     } <br>
+     else {<br>
+   var i, sum = 0;<br>
+    for(i = 0; i < arguments.length; i++) {<br>
+        sum += arguments[i];<br>
+    }<br>
+    return sum/arguments.length; <br>
+   
+ }}<br>
+};</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 12: Number Of Occurrences</h2>
+  <p>Description: <br>
+
+The numberOfOccurrences function must return the number of <br>occurrences of an element in an array.<br>
+<code>
+var arr = [0,1,2,2,3];<br>
+arr.numberOfOccurrences(0) === 1;<br>
+arr.numberOfOccurrences(4) === 0;<br>
+arr.numberOfOccurrences(2) === 2;<br>
+arr.numberOfOccurrences("a") === 0;</code></p>
+  <h2>My Code</h2>
+  <code>Array.prototype.numberOfOccurrences = function(num) {<br>
+return this.filter(function(aValue){return aValue === num}).length;<br>
+
+}</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 13: The Vowel Code</h2>
+  <p>Description: <br>
+
+Step 1: Create a function called encode() to replace all the <br>lowercase vowels in a given string with numbers according to the <br>following pattern:<br>
+
+a -> 1<br>
+
+e -> 2<br>
+
+i -> 3<br>
+
+o -> 4<br>
+
+u -> 5<br>
+
+For example, encode("hello") would return "h2ll4" There is no need<br> to worry about uppercase vowels in this kata.<br>
+
+Step 2: Now create a function called decode() to turn the numbers<br> back into vowels according to the same pattern shown above.<br>
+
+For example, decode("h3 th2r2") would return "hi there"<br>
+
+For the sake of simplicity, you can assume that any numbers passed <br>into the function will correspond to vowels.</p>
+  <h2>My Code</h2>
+  <code>/ turn vowels into numbers<br>
+function encode(string){<br>
+return string.replace(/[a]/gi,1).replace(/[e]/gi,2).replace(/[i]<br>/gi,3)<br>
+.replace(/[o]/gi,4).replace(/[u]/gi,5);<br>
+}<br>
+
+//turn numbers back into vowels<br>
+function decode(string){<br>
+return string.replace(/[1]/gi,"a").replace(/[2]/gi,"e").replace(/[3]/gi,"i")<br>
+.replace(/[4]/gi,"o").replace(/[5]/gi,"u");<br>
+}</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 14: Mutual Recursion</h2>
+  <p>Description: <br>
+
+In JavaScript there is a concept of function and variable "hoisting". (see https://developer.mozilla.org/en-<br>US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting)<br>
+
+Due to this compilation strategy JavaScript retains the ability to do mutual recursion. This means you can have all the fun of <br>regular recursion (where a function calls itself until a terminating condition) and apply it to multiple functions calling each <br>other!<br>
+
+Let's use the Hofstadter Female and Male sequences to demonstrate this technique. You'll want to create two functions F and M such <br>that the following equations are true:<br>
+<code>
+F(0) = 1<br>
+M(0) = 0<br>
+F(n) = n - M(F(n - 1))<br>
+M(n) = n - F(M(n - 1))<br>
+</code>
+Don't worry about negative numbers, n will always be greater than zero.<br>
+
+Hofstadter Wikipedia Reference http://en.wikipedia.org/wiki/Hofstadter_sequence#Hofstadter_Female_and_Male_sequences</p>
+  <h2>My Code</h2>
+  <code>function F(n) {<br>
+if (n === 0) {<br>
+  return 1;<br>
+  } else {<br>
+  return n -M(F(n-1));<br>
+    }<br>
+}<br>
+
+function M(n) {<br>
+ if (n === 0) {<br>
+   return 0;<br>
+ } else {<br>
+   return n-F(M(n-1));<br>
+   }<br>
+}</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 15: esreveR gnirtS</h2>
+  <p>Description: <br>
+
+Create a function called reverse for the String prototype that will allow the following functionality:<br>
+ <code>
+"String".reverse();// => returns "gnirtS"<br>
+"Super awesome string".reverse();// => returns "gnirts emosewa repuS"</code><br>
+The reverse function should NOT modify the original string.</p>
+  <h2>My Code</h2>
+  <code>String.prototype.reverse = function (){<br>
+
+return this.split("").reverse().join("");<br>
+
+}</code>
+</section>
+<hr>
+
+
+<section>
+  <h2>Problem 16: Disemvowel Trolls</h2>
+  <p>Description: <br>
+
+Trolls are attacking your comment section!<br>
+
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.<br>
+
+Your task is to write a function that takes a string and return a new string with all vowels removed.<br>
+
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".</p>
+  <h2>My Code</h2>
+  <code>function disemvowel(str) {<br>
+   return str.replace(/[ioaeu]/gi, "");<br>
+ 
+}</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 17: Say "Hello World" JS Style</h2>
+  <p>Description: <br>
+
+Write the definition of the function "say" such that calling this:<br>
+
+<code>say("Hello")("World")</code><br>
+returns "Hello World"</p>
+  <h2>My Code</h2>
+  <code>ar say = function(string1) {<br>
+ return  function(string2) {<br>
+     return string1 + " " + string2;<br>
+ };<br>
+};</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 18: Summing a number's digits</h2>
+  <p>Description: <br>
+
+Write a function named sumDigits which takes a number as input and returns the sum of the absolute value of each of the number's <br>decimal digits. For example:<br>
+<code>
+  sumDigits(10); // Returns 1<br>
+  sumDigits(99); // Returns 18<br>
+  sumDigits(-32); // Returns 5</code>
+Let's assume that all numbers in the input will be integer values.</p>
+  <h2>My Code</h2>
+  <code>function sumDigits(number) {<br>
+var aNumberSpt = Math.abs(number).toString().split(""); <br>
+var aNumberSpta = [];<br>
+
+for (var i =0; i< aNumberSpt.length; i++) {<br>
+    aNumberSpta.push(parseInt(aNumberSpt[i]));<br>
+  
+}<br>
+return aNumberSpta.reduce(function(a,b){return a+b});<br>
+
+}</code>
+</section>
+<hr>
+
+<section>
+     <h2>Problem 19: For the sake of argument</h2>
+     <p>Description: <br>
+
+Write a function named numbers that returns true if all the parameters it is passed are of the Number type. Otherwise, the function<br> should return false. The function should accept any number of parameters.<br>
+
+Example usage:<br>
+<code>
+numbers(1, 4, 3, 2, 5); // true<br>
+numbers(1, "a", 3); // false<br>
+numbers(1, 3, NaN); // true</code></p>
+     <h2>My Code</h2>
+     <code>function numbers () {<br>
+   var aNumbers = Array.prototype.slice.call(arguments);<br>
+   function Type (arg) {<br>
+       return typeof arg === "number";<br>
+       
+   }<br>
+   return aNumbers.every(Type);<br>
+   
+}</code>
+   </section>
+   <hr>   
+
+<section>
+  <h2>Problem 20: Reversed Strings</h2>
+  <p>Description: <br>
+
+Complete the solution so that it reverses the string value passed into it.<br>
+
+<code>solution('world'); // returns 'dlrow'</code></p>
+  <h2>My Code</h2>
+  <code>function solution(str){<br>
+  return str.split("").reverse().join("");<br>
+}</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 21: Slope of a Line</h2>
+  <p>Description: <br>
+
+Your challenge is to write a function named <code>getSlope(p1, p2)</code> that calculates the slope of the line through two points.<br> Each point that the function takes in is an array 2 elements long. The first number is the x coordinate and the second number is <br>the y coordinate. If the line through the two points is vertical, the function should return null. If the same point is given <br>twice, the function should return null.</p>
+  <h2>My Code</h2>
+  <code>function getSlope(p1, p2) {<br>
+  return p2[0] ===p1[0] ? null : (p2[1]-p1[1])/(p2[0]-p1[0])<br>
+}</code>
+</section>
+<hr>
+
+
+<section>
+  <h2>Problem 22: Use reduce() to calculate the sum of the values in an array</h2>
+  <p>Description: <br>
+
+Make the sum() function return the sum of the values in the passed in array. Your solution must use the reduce() function of the <br>built-in javascript Array object. If you're not familiar with reduce(), reading over the documentation may help.<br>
+
+<code>function sum(array) {<br>
+    // Use array.reduce() to find and return the<br>
+    // sum of the values in array.<br>
+  }
+  For example:<br>
+  
+  var someNumbers = [1,2,3,4,5,6,7,8,9,10];<br>
+  
+  sum(someNumbers); // should return 55</code></p>
+  <h2>My Code</h2>
+  <code>function sum(array) {<br>
+  return array.reduce(function(a,b) {return a +b});<br>
+}</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 23: Get key/value pairs as arrays</h2>
+  <p>Description:<br>
+
+Complete the keysAndValues function so that it takes in an object and returns the keys and values as separate arrays.<br>
+
+Example:<br>
+
+<code>keysAndValues({a: 1, b: 2, c: 3}) // should return [['a', 'b', 'c'], [1, 2, 3]]</code><br>
+Style Points: This kata only tests for data that uses object literal notation (simple objects). For extra style, can you get your<br> method to check for JavaScript objects that extend their prototype?</p>
+  <h2>My Code</h2>
+  <code>function keysAndValues(data){<br>
+ var aData = []; <br>
+ var aValue = [];<br>
+ var aKey = Object.keys(data);<br>
+
+ for (var x in data) {aValue.push(data[x]);}<br>
+ 
+ 
+ aData.push(aKey,aValue); <br>
+ return aData;<br>
+}</code>
+</section>
+<hr>
+
+<section>
+  <h2>Problem 24: Basic Calculator</h2>
+  <p>Description:<br>
+<br>"+" , "-", "*", or "/", the function will return the result of the corresponding mathematical function on the two numbers. If the string is not one of<br> the specified characters, the function should return null.<br>
+
+<code>calculate(2,"+", 4); //Should return 6<br>
+  calculate(6,"-", 1.5); //Should return 4.5<br>
+  calculate(-4,"*", 8); //Should return -32<br>
+  calculate(49,"/", -7); //Should return -7<br>
+  calculate(8,"m", 2); //Should return null<br>
+  calculate(4,"/",0) //should return null</code>
+Keep in mind, you cannot divide by zero. If an attempt to divide by zero is made, return null.</p>
+  <h2>My Code</h2>
+  <code>function calculate(num1, operation, num2) {<br>
+ switch (operation) {<br>
+     case "+": return num1 + num2;<br>
+     break;<br>
+     
+     case "-": return num1 - num2;<br>
+     break;<br>
+     
+     case "*": return num1*num2;<br>
+     break;<br>
+     
+     case "/": return num2 === 0 ? null : num1/num2;<br>
+     break;<br>
+     
+     default: return null; <br>
+
+     
+ }<br>
+}</code>
+</section>
+<hr>
+    </div> <!-- End of col-xs-12 -->
+  </div> <!-- End of row -->
+</div> <!-- End of container -->
+
+  
+<!-- Section Structure
+section>(h2{Problem}+p)+(h2{My Code}+code)^hr -->
+
+
+
+  <!-- Jquery , Jquery UI & modal  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="../movie/js/bootstrap.min.js"></script>
+
+<!-- Auto launch modal -->
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#myModal').modal('show');
+    });
+    </script>
+
+
+</body>
+</html>

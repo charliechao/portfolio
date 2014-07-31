@@ -1,0 +1,13 @@
+#All media
+*.jpg
+*.png
+*.mp4
+*.webm
+*.mp3
+*.wav
+
+#All hidden files
+.*
+!/.gitignore
+
+

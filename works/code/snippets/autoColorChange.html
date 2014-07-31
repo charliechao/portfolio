@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snippets-Change background color</title>
+<script>
+
+function bgChange() {
+	var today=new Date();
+    var ms=today.getMilliseconds();
+    var s=today.getSeconds();
+    var color = "#ff" + s + ms;
+	document.bgColor= color;
+}
+</script>	
+</head>
+<body onload ="bgChange(); setInterval('bgChange()',300)">
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mobile</title>
+	<link href="../movie/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	body{
+	background: url(img/background.png) repeat;
+	}
+  @media all and (max-width: 500px){
+    iframe {
+    width:100%;
+    }
+
+  }
+	</style>
+</head>
+<body >
+  <!-- Auto Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-    labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Mobile Page</h4>
+      </div>
+      <div class="modal-body ">
+        <h2>Description</h2>
+  <p>This is a mobile home page design for Yoobee school of design, you can scan the QR code to install. (The app name is <em>"Yoobee"</em>) </p>
+
+  <p class="text-center">
+  <img src="img/mobile.png" alt="charlie mobile design">
+  <img src="img/qrcode.png" alt="qrcode">
+  </p>
+
+  <h2>Time Frame</h2>
+  <p>Week 9 </p>
+  <h2>Key Words</h2>
+  <p> Jquery, Jquery Mobile, Phone Gap, Android App, QR scanner</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of modal -->	
+
+<div class="container">
+	<div class="row text-center">
+		<iframe src="mobile.html" frameborder="0" width="340px" height="600px"></iframe>
+	</div>
+</div>
+
+
+
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="../movie/js/bootstrap.min.js"></script>
+<!-- Auto lanch modal -->
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#myModal').modal('show');
+    });
+    </script>	
+</body>
+</html>

@@ -1,0 +1,194 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>YooBee Mobile</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
+	
+</head> 
+
+	
+<body> 
+
+
+<!-- Start of first page: #one -->
+
+<div data-role="page" id="home">
+
+ <!-- img slider -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">      
+     <div class="swiper-slide" > 
+        <img src="img/img1.jpg" alt="">	
+      </div> 
+      <div class="swiper-slide">
+       <img src="img/img2.jpg" alt="">	
+      </div>   
+      <div class="swiper-slide"> 
+        <img src="img/img3.jpg" alt="">	
+      </div>
+  </div>
+</div> 
+<!-- End of img slide -->	
+	
+	<div data-role="content" >		
+		<p><a href="tel:0800 66 55 44" data-role="button" data-theme="e">Call <img src="img/yoobee.png" alt=""> now</a></p>
+		<input type="search" name="search-mini" id="search-mini" value="" data-mini="true"/>
+		<p><a href="#two" data-role="button" data-theme="b">About <img src="img/yoobee.png" alt=""></a></p>	
+		<p><a href="#two" data-role="button" data-theme="b">Courses</a></p>	
+		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop" data-theme="b">How to apply(pop-up)</a></p>
+	</div>
+	
+	<!-- footer -->
+	<footer data-role="footer" data-theme="d" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#home"data-icon="home" data-theme="a">Home</a></li>
+				<li><a href="#basic"data-icon="about" data-theme="a">Contacts</a></li>
+				<li><a href="#newtest"data-icon="info" data-theme="a">Apply</a></li>
+				</ul>
+		</nav>
+	</footer><!-- /footer -->
+</div><!-- /page one -->
+
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" data-theme="a">
+
+	<div data-role="header">
+		<h1>About YooBee</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		
+		<p>Yoobee School of Design is New Zealand's largest specialist private tertiary provider of creative digital technology courses and related resources.</p>
+
+		<p>Established in 1997, we have campuses in Auckland, Wellington and Christchurch which offer certificate and diploma courses, short courses for the community, primary and secondary school students and teachers. We also publish teaching resources for teachers</p>	
+
+		<p>Until recently, Yoobee School of Design was proudly known as Natcoll Design & Technology. Over the past 15 years Natcoll has maintained its international reputation for producing industry-fit creative professionals. Our graduates have gone on to work in a huge variety of successful creative practices all over the globe – and it all started here. And now, ‘here’ is called Yoobee. All of Natcoll’s renowned heritage, but with a brand new name.</p>
+
+		
+	</div><!-- /content -->
+	
+	<footer data-role="footer" data-theme="d" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#home"data-icon="home" data-theme="a">Home</a></li>
+				<li><a href="#basic"data-icon="about" data-theme="a">Contacts</a></li>
+				<li><a href="#newtest"data-icon="info" data-theme="a">Apply</a></li>
+				</ul>
+		</nav>
+	</footer><!-- /footer -->
+</div><!-- /page two -->
+
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="popup">
+
+	<div data-role="header" data-theme="e">
+		<h1>Dialog</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<h2>Popup</h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
+		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to page "one"</a></p>	
+	</div><!-- /content -->
+	
+	<footer data-role="footer" data-position="fixed">
+		<h4>Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- Start of fourth page: #newtest -->
+<div data-role="page" id="newtest">
+
+	<div data-role="header" data-theme="e">
+		<h1>Dialog</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<h2>Popup</h2>
+		<p>This is the newtest page.</p>		
+		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to page "one"</a></p>	
+	</div><!-- /content -->
+	
+	<footer data-role="footer" data-position="fixed">
+		<h4>Footer</h4>
+	</footer><!-- /footer -->
+</div><!-- /page newtest -->
+
+<!-- Start of fourth page: #basic -->
+<div data-role="page" id="basic">
+
+		<div data-role="header">
+			<h1>My First Page</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<h1>Content Of The Page</h1>
+		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to page "one"</a></p>	
+		</div>
+		<div data-role="footer">
+			<p>Info .... 2014</p>
+		</div>
+
+</div><!-- /page #basic-->
+
+
+<!-- New Page -->
+<div data-role="page" id="newpage">
+
+	<div data-role="header" data-theme="e">
+		<h1>Dialog</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<h2>Popup</h2>
+		<p>This is the newtest page.</p>		
+		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to page "one"</a></p>	
+	</div><!-- /content -->
+	
+	<footer data-role="footer" data-position="fixed">
+		<h4>Footer</h4>
+	</footer><!-- /footer -->
+</div> 
+<!-- End of new page -->
+
+
+	<!-- Jquery & Jquery & sider plugins Mobile -->
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/idangerous.swiper.js"></script>
+<script src="js/custom.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<!-- activate slider -->
+<script type="text/javascript">
+
+$(function(){
+  var mySwiper = $('.swiper-container').swiper({
+    //Your options here:
+    mode:'horizontal',
+    loop: true
+    //etc..
+  });
+})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

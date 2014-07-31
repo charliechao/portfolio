@@ -1,0 +1,239 @@
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Behold, here are all the Foundation components.
+@import
+  "foundation/components/grid",
+  "foundation/components/accordion",
+  "foundation/components/alert-boxes",
+  "foundation/components/block-grid",
+  "foundation/components/breadcrumbs",
+  "foundation/components/button-groups",
+  "foundation/components/buttons",
+  "foundation/components/clearing",
+  "foundation/components/dropdown",
+  "foundation/components/dropdown-buttons",
+  "foundation/components/flex-video",
+  "foundation/components/forms",
+  "foundation/components/icon-bar",
+  "foundation/components/inline-lists",
+  "foundation/components/joyride",
+  "foundation/components/keystrokes",
+  "foundation/components/labels",
+  "foundation/components/magellan",
+  "foundation/components/orbit",
+  "foundation/components/pagination",
+  "foundation/components/panels",
+  "foundation/components/pricing-tables",
+  "foundation/components/progress-bars",
+  "foundation/components/range-slider",
+  "foundation/components/reveal",
+  "foundation/components/side-nav",
+  "foundation/components/split-buttons",
+  "foundation/components/sub-nav",
+  "foundation/components/switches",
+  "foundation/components/tables",
+  "foundation/components/tabs",
+  "foundation/components/thumbs",
+  "foundation/components/tooltips",
+  "foundation/components/top-bar",
+  "foundation/components/type",
+  "foundation/components/offcanvas",
+  "foundation/components/visibility",
+  "foundation/settings";
+
+
+@font-face {
+font-family: "telegrama_render";
+src: url(../fonts/telegrama_render.otf);
+}
+// Landing page
+video {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background-size: cover;
+}
+
+.start-button {
+@include button(rem-calc(10), #970000, 30px, false, false, false);
+font-size: 40px;
+color:black;
+font-weight:bold;
+background-color:rgba(#970000, .6);
+button:hover {
+background-color: transparent;
+
+}
+
+}
+
+
+#button-center {
+  margin-top: 230px;
+  margin-bottom: 300px;
+
+}
+
+// Page 1
+
+.full {
+  width: 100%;
+  max-width: 100%; 
+}
+.panel {
+  @include panel( rgba(#5D5D5D, .5) );
+}
+
+body > div.row.full.page1 > div:nth-child(3) > h1 {
+  color:black;
+}
+
+#c {
+color:black;
+font-size:200px;
+font-family:telegrama_render;
+
+}
+
+.c {
+color:red;
+font-size:50px;
+font-family:telegrama_render;
+font-style:italic;
+
+}
+#two {
+color:red;
+font-size:200px;
+font-family:telegrama_render;
+
+}
+
+#design {
+font-size:100px;
+font-style:italic;
+}
+
+body > div.row.full.page1 > div:nth-child(3) > h2 {
+  color: #ff0000;
+  font-weight:700;
+
+}
+
+// Page 2
+.font{
+  font-family: telegrama_render;
+  font-size: 7em;
+}
+
+body > div.row.full.page2 > div.small-6.columns.text-center.panel > h1 {
+  color:red;
+}
+body > div.row.full.page2 > div:nth-child(1) > h3 {
+  font-family: telegrama_render;
+  font-size: 4em;
+}
+
+body > div.row.full.page2 > div:nth-child(2) > ul > li {
+   font-family: telegrama_render;
+    font-size: 2em;
+}
+
+body > div.row.full.page2 > div.small-6.columns.text-center.panel > h3:nth-child(3) {
+  color:red;
+}
+
+body > div.row.full.page2 > div.small-6.columns.text-center.panel > h3:nth-child(5) {
+  color:black;
+}
+
+body > div.row.full.page2 > div:nth-child(2) > h1 {
+  color:black;
+}
+
+body > div.row.full.page2 > div:nth-child(2) > ul > li:nth-child(2) {
+  color:red;
+}
+
+body > div:nth-child(6) > div:nth-child(1) > h3 {
+  font-family: telegrama_render;
+  font-size: 4em;
+}
+
+body > div:nth-child(6) > div:nth-child(2) > ul > li {
+   font-family: telegrama_render;
+    font-size: 2em;
+}
+
+// Page 3
+.o{
+color:red;
+}
+
+#l{
+  color: white;
+}
+body > div.row.page3.text-center > div.small-12.columns.text-center > h1 {
+  color:black;
+  font-size:4em;
+  font-weight:900; 
+}
+body > div.row.page3 > div.row > div:nth-child(1) > span {
+  color:red;
+  font-size:1.5em;
+}
+
+.red {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: red;
+}
+
+body > div.row.page3 > div.row > div:nth-child(2) > span {
+color:black;
+font-size:1.5em;
+}
+
+.black {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: black;
+}
+body > div.row.page3 > div.row > div:nth-child(3) > span {
+color:white;
+font-size:1.5em;
+}
+
+.white {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: white;
+}
+
+body > div.row.page3.text-center > p:nth-child(3) {
+  font-size: 2em;
+  color: white;
+}
+body > div.row.page3.text-center > p:nth-child(3) > span {
+  font-size: 3em;
+  color:black;
+
+}
+
+body > div.row.page3.text-center > p:nth-child(4) {
+  font-size: 2em;
+  color: white;
+}
+body > div.row.page3.text-center > p:nth-child(4) > span {
+  font-size: 3em;
+  color:red;
+
+}
