@@ -9,7 +9,7 @@
             <?php if(isset($emailSent) && $emailSent == true) { //If email is sent ?>
               <div class="alert alert-success">
                 <p><strong>Message Successfully Sent!</strong></p>
-                <p>Thank you for using our contact form, <strong><?php echo $name;?></strong>! Your email was successfully sent and we&rsquo;ll be in touch with you soon.</p>
+                <p>Thank you for using my contact form, <strong><?php echo $name;?></strong>! Your email was successfully sent and I will be in touch with you soon.</p>
               </div>
             <?php } ?>
         <div class="form-group">
