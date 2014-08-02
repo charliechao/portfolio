@@ -20,8 +20,8 @@
 			<a href="mailto:charlie.chao.nz@hotmail.com" target="_blank" class="pulse grow"><i class="fa fa-envelope fa-3x"></i></a>
 		</p>
 
-	<h2>CALL ME: <a href = "tel: +64 021 0396580"> +64 021 039 6580</a></h2>
+	<h2>CALL ME: <a href = "tel:+64 021 0396580"> +64 021 039 6580</a></h2>
    
 </div>
                 
-<div class="col-sm-6 text-center"><img src="img/profile1.jpg" alt="charlie auckland bike" ></div> 
+<div class="col-sm-6 text-center"><img class="img-circle" src="img/profile1.jpg" alt="charlie auckland bike" ></div> 
