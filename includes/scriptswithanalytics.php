@@ -17,7 +17,7 @@
           var s = skrollr.init();
           }       
         <!-- initialze fittext --> 
-        $("#lpname,#lptitle").fitText(1, { minFontSize: '20px', maxFontSize: '60px' });
+        $("#lpname,#lptitle").fitText(1, { minFontSize: '40px', maxFontSize: '60px' });
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -59,7 +59,7 @@ text-decoration: none;
 }
 
 #landingpage .btn-info:hover{
-	background-color: $redColor;
+background-color: $redColor;
 
 }
 
@@ -98,9 +98,9 @@ background-position:center;
 #aboutme img{
 margin: 15% auto;
 }
+
 #aboutme h2 {
   margin-top: 0;
-
 }
 
 #codewarsicon {
@@ -175,33 +175,36 @@ background-color:$blueColor;
 
 
 // Extra Media Query
-@media screen and (max-width:500px){
-#topnav ul{
+@media screen and (max-width:768px){
+	
+#topnav {
+min-height: 40px;
+
+ul{
 text-align:center;
 overflow:hidden;
-
 }
-#topnav li {
+
+li {
 display: inline;
 
 a{
 display: inline;
+font-size: 1.5em;
 }
 
 
 }
 
-#topnav li:nth-child(1){
-display:none;
-
 }
 
-#topnav li:nth-child(2){
-display:none;
-
+#aboutme i {
+ margin:0 5px;
 }
 
- 
+#aboutme img{
+margin: 5% auto;
+}
 
 
 }

@@ -4,7 +4,7 @@
         <h2 class="text-center">Portfolio</h2>
            <div class="row">
 
-                <div class="col-xs-12 col-sm-6 col-md-4 text-center" data-anchor-target="#works" data-400-top-top="opacity:0"
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center hidden-xs" data-anchor-target="#works" data-400-top-top="opacity:0"
                  data-100-top-top="opacity:1">
                     <h4>Mobile App</h4><a href="works/mobile/index.html" target="_blank">
                     <img class="img-circle glow float" src="img/mobile1.jpg" alt="charlie mobile site" ></a></div>
@@ -29,7 +29,7 @@
                     <h4>Code Page</h4><a href="works/code/index.html" target="_blank">
                     <img class="img-circle glow float" src="img/codewars.jpg" alt="charlie codewar logo"></a></div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 text-center" data-anchor-target="#works" data-350-top-top="opacity:0"
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center hidden-xs" data-anchor-target="#works" data-350-top-top="opacity:0"
                  data-100-top-top="opacity:1">
                     <h4>Game Design</h4><a href="works/game/index.html" target="_blank">
                     <img class="img-circle glow float" src="img/game1.jpg" alt="charlie game site"></a></div>

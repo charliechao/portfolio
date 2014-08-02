@@ -99,7 +99,7 @@ video {
   margin: 15% auto;
 }
 
-/* line 101, scss/custom.scss */
+/* line 102, scss/custom.scss */
 #aboutme h2 {
   margin-top: 0;
 }
@@ -181,29 +181,33 @@ li:hover .ability-score .glyphicon.filled {
   background-color: #428bca;
 }
 
-@media screen and (max-width: 500px) {
-  /* line 179, scss/custom.scss */
+@media screen and (max-width: 768px) {
+  /* line 180, scss/custom.scss */
+  #topnav {
+    min-height: 40px;
+  }
+  /* line 183, scss/custom.scss */
   #topnav ul {
     text-align: center;
     overflow: hidden;
   }
-
-  /* line 184, scss/custom.scss */
+  /* line 188, scss/custom.scss */
   #topnav li {
     display: inline;
   }
-  /* line 187, scss/custom.scss */
+  /* line 191, scss/custom.scss */
   #topnav li a {
     display: inline;
+    font-size: 1.5em;
   }
 
-  /* line 194, scss/custom.scss */
-  #topnav li:nth-child(1) {
-    display: none;
+  /* line 201, scss/custom.scss */
+  #aboutme i {
+    margin: 0 5px;
   }
 
-  /* line 199, scss/custom.scss */
-  #topnav li:nth-child(2) {
-    display: none;
+  /* line 205, scss/custom.scss */
+  #aboutme img {
+    margin: 5% auto;
   }
 }

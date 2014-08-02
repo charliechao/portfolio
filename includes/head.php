@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/flip.css">
         <link rel="stylesheet" href="css/hover.css">
         <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
         <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->

@@ -1,5 +1,5 @@
 <section >
-<div class="col-sm-6">
+<div class="col-sm-6 hidden-xs">
   <h2 class="text-center">Contact Me</h2>
                 <form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactform">
           <fieldset>
