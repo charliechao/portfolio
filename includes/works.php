@@ -2,6 +2,7 @@
         <!-- portfolio section -->
 <section>
         <h2 class="text-center">Portfolio</h2>
+        <hr>
            <div class="row">
 
                 <div class="col-xs-12 col-sm-6 col-md-4 text-center hidden-xs" data-anchor-target="#works" data-400-top-top="opacity:0"

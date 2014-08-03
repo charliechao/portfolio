@@ -1,6 +1,6 @@
-	<h2 class="text-center">Skills</h2>
+	<h2 class="text-center">Skills</h2> 	
+	<hr>
 	
-
 	<div class="col-md-6">
 		
 		<ul class="no-bullets">

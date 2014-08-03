@@ -1,5 +1,9 @@
 <div class="row">
-	<div class="col-xs-12"> <h2 class="text-center">About me</h2></div>
+	<div class="col-xs-12">
+	 <h2 class="text-center">About me</h2>
+	 <div class="fb-like visible-xs text-center" data-href="http://www.gocharlie.co.nz" data-width="100" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+
+	</div>
 </div>
 <div class="col-sm-4">
 	<h3>Name:</h3>	
@@ -18,9 +22,9 @@
            
 <div class="col-sm-4 ">
 	<div class="flip3d center-block">
-		<div class="back"><img class="img-circle img-responsive" src="img/profile2.jpg" alt="charlie auckland bike" >
+		<div class="back"><img class="img-circle img-responsive" src="img/profile1.jpg" alt="charlie auckland bike" >
 		</div>
-		<div class="front"><img class="img-circle img-responsive" src="img/profile1.jpg" alt="charlie auckland bike" >
+		<div class="front"><img class="img-circle img-responsive" src="img/profile2.jpg" alt="charlie auckland bike" >
 		</div>
 	</div>
 
@@ -31,14 +35,15 @@
 		<h3 >Call Me:</h3>
 		<h3><a href = "tel:+64 021 0396580"> +64 021 039 6580</a></h3>
 	</div>
+	<h3>Email Me:</h3>
+	<a href="mailto:charlie.chao.nz@hotmail.com" target="_blank"><h4>charlie@gocharlie.co.nz</h4></a>
 	<h3>Get Connected:</h3>
    		<p>
 			<a href="http://nz.linkedin.com/in/gocharlie/" target="_blank" class="pulse grow"><i class="fa fa-linkedin fa-3x"></i></a>
 			<a href="https://www.facebook.com/yeahcharlie" target="_blank" class="pulse grow"><i class="fa fa-facebook fa-3x"></i></a>
-			<a href="http://www.codewars.com/users/charliechao" target="_blank" class="pulse grow"><img src="img/codewarsicon.png"
-			 alt="codewars icon" id ="codewarsicon"></a>
+			<a href="http://www.codewars.com/users/charliechao" target="_blank" class="pulse grow"><i class="fa fa-code fa-3x"></i></a>
 			<a href="https://github.com/charliechao" target="_blank" class="pulse grow"><i class="fa fa-github-alt fa-3x"></i></a>
-			<a href="mailto:charlie.chao.nz@hotmail.com" target="_blank" class="pulse grow"><i class="fa fa-envelope fa-3x"></i></a>
+			<a href="https://twitter.com/charliechao" target="_blank" class="pulse grow"><i class="fa fa-twitter fa-3x"></i></a>
 		</p>   
 	
 </div>	
