@@ -2,7 +2,7 @@
 	<div class="col-xs-12">
 	 <h2 class="text-center">About me</h2>
 	 <div class="fb-like visible-xs text-center" data-href="http://www.gocharlie.co.nz" data-width="100" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-
+	<hr>
 	</div>
 </div>
 <div class="col-sm-4">
@@ -33,7 +33,7 @@
 <div class="col-sm-4">
 	<div class="hidden-xs">
 		<h3 >Call Me:</h3>
-		<h3><a href = "tel:+64 021 0396580"> +64 021 039 6580</a></h3>
+		<h3><a href = "tel:+640210396580"> +64 021 039 6580</a></h3>
 	</div>
 	<h3>Email Me:</h3>
 	<a href="mailto:charlie.chao.nz@hotmail.com" target="_blank"><h4>charlie@gocharlie.co.nz</h4></a>

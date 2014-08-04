@@ -32,7 +32,7 @@
   <?php include "includes/nav.php";?>  
 
         <!-- Landing Page -->
-  <?php include "includes/landingpage.php";?> 
+  <?php include "includes/landingpage.php";?> <br> 
 
       <!-- profile continues -->
     <div class="container">
@@ -40,20 +40,17 @@
       <div class="row" id="aboutme">
           <!-- about me section -->
     <?php include "includes/aboutme.php";?>
-      </div>
-      <hr>
+      </div> <br>
 
       <!-- Skills -->
       <div class="row" id="skills">
       <?php include "includes/skills.php";?>
-      </div>
-      <hr>
+      </div> <br>
 
       <!-- works section -->
     <div class="row" id="works">     
     <?php include "includes/works.php";?>
-    </div>
-      <hr>
+    </div> <br>
 
       <!-- contact form and api google map -->
       <div class="row" id="contacts">
@@ -62,7 +59,7 @@
 
       <!-- Google Api Map -->
        <?php include "includes/apimap.php" ;?> 
-      </div>
+      </div> <br>
 
   </div> <!-- end of container    --> 
 

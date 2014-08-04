@@ -1,10 +1,15 @@
 /* line 6, scss/custom.scss */
 body {
-  background-color: rgba(221, 192, 95, 0.3);
+  background-color: #f4eccf;
   position: relative;
 }
 
-/* line 12, scss/custom.scss */
+/* line 11, scss/custom.scss */
+hr {
+  border-top: 1px solid rgba(66, 139, 202, 0.5);
+}
+
+/* line 15, scss/custom.scss */
 #topnav {
   border-color: transparent;
   border-width: 0;
@@ -12,29 +17,29 @@ body {
   background-color: #428bca;
 }
 
-/* line 20, scss/custom.scss */
-#topnav .collapse.in {
-  border-top: 0;
-}
-
-/* line 24, scss/custom.scss */
+/* line 23, scss/custom.scss */
 #topnav a {
   color: #f4eccf;
   font-size: 1.2em;
 }
 
-/* line 30, scss/custom.scss */
+/* line 28, scss/custom.scss */
+#topnav a:hover {
+  background-color: #245682;
+}
+
+/* line 32, scss/custom.scss */
 #topnav .active > a, #topnav .active > a:hover, #topnav > .active > a:focus {
   background: #245682;
   color: #FFFFFF;
 }
 
-/* line 33, scss/custom.scss */
+/* line 35, scss/custom.scss */
 .fb_iframe_widget {
   margin-top: 15px;
 }
 
-/* line 37, scss/custom.scss */
+/* line 39, scss/custom.scss */
 #lptext {
   position: absolute;
   margin-top: 10%;
@@ -43,39 +48,39 @@ body {
   z-index: 10;
 }
 
-/* line 46, scss/custom.scss */
+/* line 48, scss/custom.scss */
 #lpname, #lptitle {
   font-family: 'Anton', sans-serif;
 }
 
-/* line 50, scss/custom.scss */
+/* line 52, scss/custom.scss */
 #landingpage .btn-info {
   background-color: #428bca;
   font-size: 24px;
   border-color: transparent;
 }
 
-/* line 56, scss/custom.scss */
+/* line 58, scss/custom.scss */
 #landingpage a {
   color: #f4eccf;
 }
 
-/* line 60, scss/custom.scss */
+/* line 62, scss/custom.scss */
 #landingpage a:hover {
   text-decoration: none;
 }
 
-/* line 64, scss/custom.scss */
+/* line 66, scss/custom.scss */
 #landingpage .btn-info:hover {
-  background-color: #fe3a35;
+  background-color: #245682;
 }
 
-/* line 70, scss/custom.scss */
+/* line 72, scss/custom.scss */
 #landingpage .media {
   position: relative;
 }
 
-/* line 74, scss/custom.scss */
+/* line 76, scss/custom.scss */
 #landingpage .overlay {
   position: absolute;
   top: 0;
@@ -85,7 +90,7 @@ body {
   background-color: rgba(66, 139, 202, 0.3);
 }
 
-/* line 83, scss/custom.scss */
+/* line 85, scss/custom.scss */
 video {
   right: 0;
   bottom: 0;
@@ -95,7 +100,7 @@ video {
   vertical-align: bottom;
 }
 
-/* line 92, scss/custom.scss */
+/* line 94, scss/custom.scss */
 #landingpage img {
   right: 0;
   bottom: 0;
@@ -106,43 +111,43 @@ video {
   background-position: center;
 }
 
-/* line 106, scss/custom.scss */
+/* line 108, scss/custom.scss */
 #aboutme i {
   margin: 0 10px;
 }
 
-/* line 110, scss/custom.scss */
+/* line 112, scss/custom.scss */
 #aboutme a:hover {
-  color: #fe3a35;
+  color: #245682;
 }
 
-/* line 114, scss/custom.scss */
+/* line 116, scss/custom.scss */
 #aboutme img {
   margin: 15% auto;
 }
 
-/* line 118, scss/custom.scss */
+/* line 120, scss/custom.scss */
 #aboutme h2 {
   margin-top: 0;
 }
 
-/* line 123, scss/custom.scss */
+/* line 125, scss/custom.scss */
 .fa:hover {
-  color: #fe3a35;
+  color: #245682;
 }
 
-/* line 130, scss/custom.scss */
+/* line 132, scss/custom.scss */
 .ability-title {
   display: inline-block;
   width: 60%;
 }
 
-/* line 134, scss/custom.scss */
+/* line 136, scss/custom.scss */
 .ability-score {
   float: right;
 }
 
-/* line 137, scss/custom.scss */
+/* line 139, scss/custom.scss */
 .ability-score .glyphicon {
   color: #DFE0E0;
   font-size: 14px;
@@ -152,46 +157,66 @@ video {
   transition: all 0.3s;
 }
 
-/* line 147, scss/custom.scss */
+/* line 149, scss/custom.scss */
 .ability-score .glyphicon.filled {
-  color: #2A6496;
+  color: #428bca;
 }
 
-/* line 151, scss/custom.scss */
+/* line 153, scss/custom.scss */
 li:hover .ability-score .glyphicon.filled {
-  color: #FE3A35;
+  color: #245682;
 }
 
-/* line 156, scss/custom.scss */
+/* line 158, scss/custom.scss */
 #skills ul > li {
   min-height: 30px;
   padding: 3px 0px;
 }
 
-/* line 157, scss/custom.scss */
+/* line 163, scss/custom.scss */
 #skills ul > li:hover {
   background: #F2F2F2;
 }
 
-/* line 158, scss/custom.scss */
+/* line 167, scss/custom.scss */
 #skills li:hover .ability-score .glyphicon {
   margin-left: 2px;
 }
 
-/* line 164, scss/custom.scss */
+/* line 172, scss/custom.scss */
+.workimg {
+  position: relative;
+}
+
+/* line 176, scss/custom.scss */
+.imgoverlay {
+  position: absolute;
+  background-color: rgba(66, 139, 202, 0.5);
+  transition: background-color 1.5s;
+  top: 0;
+  width: 300px;
+  height: 300px;
+}
+
+/* line 185, scss/custom.scss */
+.imgoverlay:hover {
+  background-color: rgba(66, 139, 202, 0);
+}
+
+/* line 190, scss/custom.scss */
 #submitButton:hover {
-  background-color: #fe3a35;
+  background-color: #245682;
   border-color: transparent;
 }
 
-/* line 171, scss/custom.scss */
+/* line 197, scss/custom.scss */
 #map-canvas {
-  height: 400px;
+  height: 390px;
   margin: 0;
   padding: 0px;
 }
 
-/* line 179, scss/custom.scss */
+/* line 205, scss/custom.scss */
 #footer {
   margin-top: 10px;
   color: #f4eccf;
@@ -199,31 +224,31 @@ li:hover .ability-score .glyphicon.filled {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 192, scss/custom.scss */
+  /* line 218, scss/custom.scss */
   #topnav {
     min-height: 40px;
   }
-  /* line 195, scss/custom.scss */
+  /* line 221, scss/custom.scss */
   #topnav ul {
     text-align: center;
     overflow: hidden;
   }
-  /* line 200, scss/custom.scss */
+  /* line 226, scss/custom.scss */
   #topnav li {
     display: inline;
   }
-  /* line 203, scss/custom.scss */
+  /* line 229, scss/custom.scss */
   #topnav li a {
     display: inline;
     font-size: 1.5em;
   }
 
-  /* line 213, scss/custom.scss */
+  /* line 239, scss/custom.scss */
   #aboutme i {
     margin: 0 5px;
   }
 
-  /* line 217, scss/custom.scss */
+  /* line 243, scss/custom.scss */
   #aboutme img {
     margin: 5% auto;
   }

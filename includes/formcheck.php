@@ -1,4 +1,3 @@
-<!-- PHP for contact form -->
 <?php
 //If the form is submitted
 if(isset($_POST['submit'])) {
@@ -40,4 +39,4 @@ if(isset($_POST['submit'])) {
         $emailSent = true;
     }
 }
-?> <!-- End of PHP for contact form -->
+?> 

@@ -1,13 +1,16 @@
 // variables
 $blueColor: #428BCA ;
-$redColor: #FE3A35;
+$redColor: #245682;
 $backgroundColor:#F4ECCF;
 
 body{
-background-color: rgba(221, 192,95, 0.3);
+background-color: $backgroundColor;
 position:relative;
 }
 
+hr{
+border-top: 1px solid rgba($blueColor, 0.5);
+}
 // Nav bar
 #topnav{
  border-color: transparent;
@@ -17,18 +20,17 @@ position:relative;
  }
 
 
-#topnav .collapse.in {
-border-top: 0;
-}
-
  #topnav a {
 	color:$backgroundColor;
 	font-size: 1.2em;
+ }
 
+ #topnav a:hover{
+background-color: $redColor;
  }
 
 #topnav .active > a, #topnav .active > a:hover, #topnav > .active > a:focus {
- background: darken($blueColor, 20%); color: #FFFFFF;
+ background: $redColor; color: #FFFFFF;
  }
 .fb_iframe_widget{
 margin-top:15px;
@@ -138,27 +140,51 @@ margin: 15% auto;
 	color: #DFE0E0; 
 	font-size: 14px; 	 
 	-webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 
 .ability-score .glyphicon.filled {
- color: #2A6496;
+ color: $blueColor;
 
 }
 li:hover .ability-score .glyphicon.filled {
- color: #FE3A35;
+ color: $redColor;
 
 }
 
-#skills ul > li { min-height: 30px; padding: 3px 0px; }
-#skills ul > li:hover { background: #F2F2F2; }
-#skills li:hover .ability-score .glyphicon { margin-left: 2px;} 
+#skills ul > li {
+  min-height: 30px;
+  padding: 3px 0px;
+}
+
+#skills ul > li:hover {
+background: #F2F2F2;
+}
+
+#skills li:hover .ability-score .glyphicon {
+margin-left: 2px;
+} 
 
 //works page
+.workimg{
+position: relative;
+}
 
+.imgoverlay{
+position: absolute;
+background-color: rgba($blueColor, 0.5);
+transition: background-color 1.5s;
+top: 0;
+width: 300px;
+height: 300px;
+}
+
+.imgoverlay:hover{
+background-color: rgba($blueColor, 0)
+}
 
 // contacts page
 #submitButton:hover{
@@ -169,7 +195,7 @@ border-color: transparent;
 
 //Contact page
 #map-canvas {
-        height: 400px;
+        height: 390px;
         margin: 0;
         padding: 0px;
     }

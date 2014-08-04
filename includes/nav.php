@@ -13,7 +13,7 @@
                     </li>
                     <li class="hidden-xs"><a href="#contacts" data-scroll>Contact me</a>
                     </li>
-                    <li class="hidden-xs"><a href="works/wp" target="_blank" data-scroll>Blog</a>
+                    <li class="hidden-xs"><a href="works/wp" target="_blank">Blog</a>
                     </li>
                 </ul>
             <span class="fb-like pull-right hidden-xs" data-href="http://www.gocharlie.co.nz" data-width="100" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></span>    
