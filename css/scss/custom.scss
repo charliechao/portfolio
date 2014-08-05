@@ -68,19 +68,19 @@ background-color: $redColor;
 
 }
 
-
 #landingpage .media{
 position: relative;
 }
 
 #landingpage .overlay{
 position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba($blueColor, 0.3);
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba($blueColor, 0.3);
 }
+
 
 video{
 right:0;
@@ -137,12 +137,12 @@ margin: 15% auto;
 }
 
 .ability-score .glyphicon { 
-	color: #DFE0E0; 
-	font-size: 14px; 	 
-	-webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-    transition: all 0.3s;
+color: #DFE0E0; 
+font-size: 14px; 	 
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 
@@ -169,22 +169,32 @@ margin-left: 2px;
 } 
 
 //works page
-.workimg{
-position: relative;
+
+img.blueglow{
+-webkit-box-shadow:0 0 50px rgba($blueColor, 1.0);
+-moz-box-shadow:0 0 50px rgba($blueColor, 1.0);
+box-shadow:0 0 50px rgba($blueColor, 1.0);
 }
 
-.imgoverlay{
-position: absolute;
-background-color: rgba($blueColor, 0.5);
-transition: background-color 1.5s;
-top: 0;
-width: 300px;
-height: 300px;
+img.blueglow:hover, img.blueglow:focus, img.blueglow:active{
+-webkit-box-shadow:0 0 0px;
+-moz-box-shadow:0 0 0px;
+box-shadow:0 0 0px;
 }
 
-.imgoverlay:hover{
-background-color: rgba($blueColor, 0)
+img.float {
+-webkit-transition-duration: 2.0s;
+transition-duration: 2.0s;
+-webkit-transition-property: transform;
+transition-property: transform; 
 }
+
+img.float:hover, img.float:focus, img.float:active {
+-webkit-transform: translateY(-10px);
+transform: translateY(-10px);
+}
+
+
 
 // contacts page
 #submitButton:hover{

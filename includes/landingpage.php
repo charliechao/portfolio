@@ -13,7 +13,7 @@
         </div> 
     </div>
   <div class="media">        
-    <video class="hidden-xs" autoplay loop muted preload ="auto" >
+    <video class="hidden-xs" poster="img/lpbackground.jpg" autoplay loop muted preload ="auto" >
                 <source src="assets/vid/bg.webm" type="video/webm">
                 <source src="assets/vid/bg.mp4" type="video/mp4">
                 

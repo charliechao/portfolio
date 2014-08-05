@@ -75,12 +75,12 @@ hr {
   background-color: #245682;
 }
 
-/* line 72, scss/custom.scss */
+/* line 71, scss/custom.scss */
 #landingpage .media {
   position: relative;
 }
 
-/* line 76, scss/custom.scss */
+/* line 75, scss/custom.scss */
 #landingpage .overlay {
   position: absolute;
   top: 0;
@@ -183,40 +183,48 @@ li:hover .ability-score .glyphicon.filled {
   margin-left: 2px;
 }
 
-/* line 172, scss/custom.scss */
-.workimg {
-  position: relative;
+/* line 173, scss/custom.scss */
+img.blueglow {
+  -webkit-box-shadow: 0 0 50px #428bca;
+  -moz-box-shadow: 0 0 50px #428bca;
+  box-shadow: 0 0 50px #428bca;
 }
 
-/* line 176, scss/custom.scss */
-.imgoverlay {
-  position: absolute;
-  background-color: rgba(66, 139, 202, 0.5);
-  transition: background-color 1.5s;
-  top: 0;
-  width: 300px;
-  height: 300px;
+/* line 179, scss/custom.scss */
+img.blueglow:hover, img.blueglow:focus, img.blueglow:active {
+  -webkit-box-shadow: 0 0 0px;
+  -moz-box-shadow: 0 0 0px;
+  box-shadow: 0 0 0px;
 }
 
 /* line 185, scss/custom.scss */
-.imgoverlay:hover {
-  background-color: rgba(66, 139, 202, 0);
+img.float {
+  -webkit-transition-duration: 2.0s;
+  transition-duration: 2.0s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
 
-/* line 190, scss/custom.scss */
+/* line 192, scss/custom.scss */
+img.float:hover, img.float:focus, img.float:active {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+/* line 200, scss/custom.scss */
 #submitButton:hover {
   background-color: #245682;
   border-color: transparent;
 }
 
-/* line 197, scss/custom.scss */
+/* line 207, scss/custom.scss */
 #map-canvas {
   height: 390px;
   margin: 0;
   padding: 0px;
 }
 
-/* line 205, scss/custom.scss */
+/* line 215, scss/custom.scss */
 #footer {
   margin-top: 10px;
   color: #f4eccf;
@@ -224,31 +232,31 @@ li:hover .ability-score .glyphicon.filled {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 218, scss/custom.scss */
+  /* line 228, scss/custom.scss */
   #topnav {
     min-height: 40px;
   }
-  /* line 221, scss/custom.scss */
+  /* line 231, scss/custom.scss */
   #topnav ul {
     text-align: center;
     overflow: hidden;
   }
-  /* line 226, scss/custom.scss */
+  /* line 236, scss/custom.scss */
   #topnav li {
     display: inline;
   }
-  /* line 229, scss/custom.scss */
+  /* line 239, scss/custom.scss */
   #topnav li a {
     display: inline;
     font-size: 1.5em;
   }
 
-  /* line 239, scss/custom.scss */
+  /* line 249, scss/custom.scss */
   #aboutme i {
     margin: 0 5px;
   }
 
-  /* line 243, scss/custom.scss */
+  /* line 253, scss/custom.scss */
   #aboutme img {
     margin: 5% auto;
   }
