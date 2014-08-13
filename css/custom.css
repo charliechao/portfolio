@@ -3,13 +3,21 @@ body {
   background-color: #f4eccf;
   position: relative;
 }
+/* line 9, scss/custom.scss */
+body a:hover {
+  text-decoration: none;
+}
+/* line 12, scss/custom.scss */
+body h2 {
+  font-family: 'Roboto', sans-serif;
+}
 
-/* line 11, scss/custom.scss */
+/* line 17, scss/custom.scss */
 hr {
   border-top: 1px solid rgba(66, 139, 202, 0.5);
 }
 
-/* line 15, scss/custom.scss */
+/* line 21, scss/custom.scss */
 #topnav {
   border-color: transparent;
   border-width: 0;
@@ -17,29 +25,29 @@ hr {
   background-color: #428bca;
 }
 
-/* line 23, scss/custom.scss */
+/* line 29, scss/custom.scss */
 #topnav a {
   color: #f4eccf;
   font-size: 1.2em;
 }
 
-/* line 28, scss/custom.scss */
+/* line 34, scss/custom.scss */
 #topnav a:hover {
   background-color: #245682;
 }
 
-/* line 32, scss/custom.scss */
+/* line 38, scss/custom.scss */
 #topnav .active > a, #topnav .active > a:hover, #topnav > .active > a:focus {
   background: #245682;
   color: #FFFFFF;
 }
 
-/* line 35, scss/custom.scss */
-.fb_iframe_widget {
+/* line 41, scss/custom.scss */
+.fb_iframe_widget, .twitter-follow-button {
   margin-top: 15px;
 }
 
-/* line 39, scss/custom.scss */
+/* line 46, scss/custom.scss */
 #lptext {
   position: absolute;
   margin-top: 10%;
@@ -48,49 +56,49 @@ hr {
   z-index: 10;
 }
 
-/* line 48, scss/custom.scss */
+/* line 54, scss/custom.scss */
 #lpname, #lptitle {
   font-family: 'Anton', sans-serif;
 }
 
-/* line 52, scss/custom.scss */
+/* line 58, scss/custom.scss */
 #landingpage .btn-info {
   background-color: #428bca;
   font-size: 24px;
   border-color: transparent;
 }
 
-/* line 58, scss/custom.scss */
+/* line 64, scss/custom.scss */
 #landingpage a {
   color: #f4eccf;
 }
 
-/* line 62, scss/custom.scss */
+/* line 68, scss/custom.scss */
 #landingpage a:hover {
   text-decoration: none;
 }
 
-/* line 66, scss/custom.scss */
+/* line 72, scss/custom.scss */
 #landingpage .btn-info:hover {
   background-color: #245682;
 }
 
-/* line 71, scss/custom.scss */
+/* line 77, scss/custom.scss */
 #landingpage .media {
   position: relative;
 }
 
-/* line 75, scss/custom.scss */
+/* line 81, scss/custom.scss */
 #landingpage .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(66, 139, 202, 0.3);
+  background-color: rgba(36, 86, 130, 0.6);
 }
 
-/* line 85, scss/custom.scss */
+/* line 91, scss/custom.scss */
 video {
   right: 0;
   bottom: 0;
@@ -100,7 +108,7 @@ video {
   vertical-align: bottom;
 }
 
-/* line 94, scss/custom.scss */
+/* line 100, scss/custom.scss */
 #landingpage img {
   right: 0;
   bottom: 0;
@@ -111,43 +119,43 @@ video {
   background-position: center;
 }
 
-/* line 108, scss/custom.scss */
+/* line 113, scss/custom.scss */
 #aboutme i {
   margin: 0 10px;
 }
 
-/* line 112, scss/custom.scss */
+/* line 117, scss/custom.scss */
 #aboutme a:hover {
   color: #245682;
 }
 
-/* line 116, scss/custom.scss */
+/* line 121, scss/custom.scss */
 #aboutme img {
   margin: 15% auto;
 }
 
-/* line 120, scss/custom.scss */
+/* line 125, scss/custom.scss */
 #aboutme h2 {
   margin-top: 0;
 }
 
-/* line 125, scss/custom.scss */
+/* line 130, scss/custom.scss */
 .fa:hover {
   color: #245682;
 }
 
-/* line 132, scss/custom.scss */
+/* line 137, scss/custom.scss */
 .ability-title {
   display: inline-block;
   width: 60%;
 }
 
-/* line 136, scss/custom.scss */
+/* line 141, scss/custom.scss */
 .ability-score {
   float: right;
 }
 
-/* line 139, scss/custom.scss */
+/* line 144, scss/custom.scss */
 .ability-score .glyphicon {
   color: #DFE0E0;
   font-size: 14px;
@@ -157,74 +165,119 @@ video {
   transition: all 0.3s;
 }
 
-/* line 149, scss/custom.scss */
+/* line 154, scss/custom.scss */
 .ability-score .glyphicon.filled {
   color: #428bca;
 }
 
-/* line 153, scss/custom.scss */
+/* line 158, scss/custom.scss */
 li:hover .ability-score .glyphicon.filled {
   color: #245682;
 }
 
-/* line 158, scss/custom.scss */
+/* line 163, scss/custom.scss */
 #skills ul > li {
   min-height: 30px;
   padding: 3px 0px;
 }
 
-/* line 163, scss/custom.scss */
+/* line 168, scss/custom.scss */
 #skills ul > li:hover {
   background: #F2F2F2;
 }
 
-/* line 167, scss/custom.scss */
+/* line 172, scss/custom.scss */
 #skills li:hover .ability-score .glyphicon {
   margin-left: 2px;
 }
 
-/* line 173, scss/custom.scss */
-img.blueglow {
-  -webkit-box-shadow: 0 0 50px #428bca;
-  -moz-box-shadow: 0 0 50px #428bca;
-  box-shadow: 0 0 50px #428bca;
+/* line 178, scss/custom.scss */
+.img {
+  position: relative;
+  overflow: hidden;
+}
+/* line 181, scss/custom.scss */
+.img img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
 }
 
-/* line 179, scss/custom.scss */
-img.blueglow:hover, img.blueglow:focus, img.blueglow:active {
-  -webkit-box-shadow: 0 0 0px;
-  -moz-box-shadow: 0 0 0px;
-  box-shadow: 0 0 0px;
+/* line 189, scss/custom.scss */
+.imgoverlay {
+  position: absolute;
+  z-index: 20;
+  background-color: rgba(66, 139, 202, 0.8);
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+/* line 201, scss/custom.scss */
+.imgoverlay a.expand {
+  display: block;
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border: solid 5px #fff;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 30px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-/* line 185, scss/custom.scss */
-img.float {
-  -webkit-transition-duration: 2.0s;
-  transition-duration: 2.0s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+/* line 231, scss/custom.scss */
+.img.imghover .imgoverlay {
+  opacity: 1;
 }
 
-/* line 192, scss/custom.scss */
-img.float:hover, img.float:focus, img.float:active {
-  -webkit-transform: translateY(-10px);
-  transform: translateY(-10px);
+/* line 235, scss/custom.scss */
+.img.imghover .imgoverlay a.expand {
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
 }
 
-/* line 200, scss/custom.scss */
+/* line 247, scss/custom.scss */
 #submitButton:hover {
   background-color: #245682;
   border-color: transparent;
 }
 
-/* line 207, scss/custom.scss */
+/* line 254, scss/custom.scss */
 #map-canvas {
   height: 390px;
   margin: 0;
   padding: 0px;
 }
 
-/* line 215, scss/custom.scss */
+/* line 262, scss/custom.scss */
 #footer {
   margin-top: 10px;
   color: #f4eccf;
@@ -232,31 +285,42 @@ img.float:hover, img.float:focus, img.float:active {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 228, scss/custom.scss */
-  #topnav {
-    min-height: 40px;
-  }
-  /* line 231, scss/custom.scss */
+  /* line 276, scss/custom.scss */
   #topnav ul {
-    text-align: center;
+    height: 40px;
     overflow: hidden;
+    display: table;
   }
-  /* line 236, scss/custom.scss */
+  /* line 281, scss/custom.scss */
   #topnav li {
-    display: inline;
+    display: table-cell;
+    width: 25%;
+    height: 40px;
+    text-align: center;
   }
-  /* line 239, scss/custom.scss */
+  /* line 286, scss/custom.scss */
   #topnav li a {
     display: inline;
     font-size: 1.5em;
+    line-height: 40px;
   }
 
-  /* line 249, scss/custom.scss */
+  /* line 293, scss/custom.scss */
+  #landingpage .overlay {
+    background-color: transparent;
+  }
+
+  /* line 297, scss/custom.scss */
+  #lptext {
+    margin-top: 15%;
+  }
+
+  /* line 300, scss/custom.scss */
   #aboutme i {
     margin: 0 5px;
   }
 
-  /* line 253, scss/custom.scss */
+  /* line 304, scss/custom.scss */
   #aboutme img {
     margin: 5% auto;
   }
