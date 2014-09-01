@@ -11,13 +11,19 @@ body a:hover {
 body h2 {
   font-family: 'Roboto', sans-serif;
 }
-
-/* line 17, scss/custom.scss */
-hr {
-  border-top: 1px solid rgba(66, 139, 202, 0.5);
+/* line 15, scss/custom.scss */
+body .row {
+  margin-top: 30px;
 }
 
-/* line 21, scss/custom.scss */
+/* line 20, scss/custom.scss */
+hr {
+  border-top: 1px solid rgba(66, 139, 202, 0.5);
+  width: 30%;
+  margin: -10px auto 2px;
+}
+
+/* line 26, scss/custom.scss */
 #topnav {
   border-color: transparent;
   border-width: 0;
@@ -25,70 +31,85 @@ hr {
   background-color: #428bca;
 }
 
-/* line 29, scss/custom.scss */
+/* line 34, scss/custom.scss */
 #topnav a {
   color: #f4eccf;
   font-size: 1.2em;
 }
 
-/* line 34, scss/custom.scss */
+/* line 39, scss/custom.scss */
 #topnav a:hover {
   background-color: #245682;
 }
 
-/* line 38, scss/custom.scss */
+/* line 43, scss/custom.scss */
 #topnav .active > a, #topnav .active > a:hover, #topnav > .active > a:focus {
   background: #245682;
   color: #FFFFFF;
 }
 
-/* line 41, scss/custom.scss */
+/* line 46, scss/custom.scss */
 .fb_iframe_widget, .twitter-follow-button {
   margin-top: 15px;
 }
 
-/* line 46, scss/custom.scss */
+/* line 51, scss/custom.scss */
 #lptext {
   position: absolute;
-  margin-top: 10%;
+  margin-top: 15%;
   color: #428bca;
   text-shadow: 2px 2px 10px black;
   z-index: 10;
 }
+/* line 57, scss/custom.scss */
+#lptext #lpname {
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+/* line 61, scss/custom.scss */
+#lptext #lptitle {
+  margin-top: 10px;
+  font-size: 24px;
+}
 
-/* line 54, scss/custom.scss */
-#lpname, #lptitle {
+/* line 67, scss/custom.scss */
+#lptitle {
   font-family: 'Anton', sans-serif;
 }
 
-/* line 58, scss/custom.scss */
+/* line 70, scss/custom.scss */
+#lpname {
+  font-family: "Oswald", sans-serif;
+}
+
+/* line 74, scss/custom.scss */
 #landingpage .btn-info {
   background-color: #428bca;
   font-size: 24px;
   border-color: transparent;
 }
 
-/* line 64, scss/custom.scss */
+/* line 80, scss/custom.scss */
 #landingpage a {
   color: #f4eccf;
 }
 
-/* line 68, scss/custom.scss */
+/* line 84, scss/custom.scss */
 #landingpage a:hover {
   text-decoration: none;
 }
 
-/* line 72, scss/custom.scss */
+/* line 88, scss/custom.scss */
 #landingpage .btn-info:hover {
   background-color: #245682;
 }
 
-/* line 77, scss/custom.scss */
+/* line 93, scss/custom.scss */
 #landingpage .media {
   position: relative;
 }
 
-/* line 81, scss/custom.scss */
+/* line 97, scss/custom.scss */
 #landingpage .overlay {
   position: absolute;
   top: 0;
@@ -98,7 +119,7 @@ hr {
   background-color: rgba(36, 86, 130, 0.6);
 }
 
-/* line 91, scss/custom.scss */
+/* line 107, scss/custom.scss */
 video {
   right: 0;
   bottom: 0;
@@ -108,7 +129,7 @@ video {
   vertical-align: bottom;
 }
 
-/* line 100, scss/custom.scss */
+/* line 116, scss/custom.scss */
 #landingpage img {
   right: 0;
   bottom: 0;
@@ -119,43 +140,48 @@ video {
   background-position: center;
 }
 
-/* line 113, scss/custom.scss */
+/* line 129, scss/custom.scss */
 #aboutme i {
   margin: 0 10px;
 }
 
-/* line 117, scss/custom.scss */
+/* line 133, scss/custom.scss */
 #aboutme a:hover {
   color: #245682;
 }
 
-/* line 121, scss/custom.scss */
+/* line 137, scss/custom.scss */
 #aboutme img {
   margin: 15% auto;
 }
 
-/* line 125, scss/custom.scss */
+/* line 141, scss/custom.scss */
 #aboutme h2 {
   margin-top: 0;
 }
 
-/* line 130, scss/custom.scss */
+/* line 146, scss/custom.scss */
 .fa:hover {
   color: #245682;
 }
 
-/* line 137, scss/custom.scss */
+/* line 152, scss/custom.scss */
+#skills {
+  margin-top: 50px;
+}
+
+/* line 156, scss/custom.scss */
 .ability-title {
   display: inline-block;
   width: 60%;
 }
 
-/* line 141, scss/custom.scss */
+/* line 160, scss/custom.scss */
 .ability-score {
   float: right;
 }
 
-/* line 144, scss/custom.scss */
+/* line 163, scss/custom.scss */
 .ability-score .glyphicon {
   color: #DFE0E0;
   font-size: 14px;
@@ -165,38 +191,43 @@ video {
   transition: all 0.3s;
 }
 
-/* line 154, scss/custom.scss */
+/* line 173, scss/custom.scss */
 .ability-score .glyphicon.filled {
   color: #428bca;
 }
 
-/* line 158, scss/custom.scss */
+/* line 177, scss/custom.scss */
 li:hover .ability-score .glyphicon.filled {
   color: #245682;
 }
 
-/* line 163, scss/custom.scss */
+/* line 182, scss/custom.scss */
 #skills ul > li {
   min-height: 30px;
   padding: 3px 0px;
 }
 
-/* line 168, scss/custom.scss */
+/* line 187, scss/custom.scss */
 #skills ul > li:hover {
   background: #F2F2F2;
 }
 
-/* line 172, scss/custom.scss */
+/* line 191, scss/custom.scss */
 #skills li:hover .ability-score .glyphicon {
   margin-left: 2px;
 }
 
-/* line 178, scss/custom.scss */
+/* line 196, scss/custom.scss */
+#works {
+  margin-top: 50px;
+}
+
+/* line 200, scss/custom.scss */
 .img {
   position: relative;
   overflow: hidden;
 }
-/* line 181, scss/custom.scss */
+/* line 203, scss/custom.scss */
 .img img {
   margin: 0;
   padding: 0;
@@ -204,7 +235,7 @@ li:hover .ability-score .glyphicon.filled {
   height: auto;
 }
 
-/* line 189, scss/custom.scss */
+/* line 211, scss/custom.scss */
 .imgoverlay {
   position: absolute;
   z-index: 20;
@@ -218,7 +249,7 @@ li:hover .ability-score .glyphicon.filled {
   height: 100%;
   opacity: 0;
 }
-/* line 201, scss/custom.scss */
+/* line 223, scss/custom.scss */
 .imgoverlay a.expand {
   display: block;
   position: absolute;
@@ -248,12 +279,12 @@ li:hover .ability-score .glyphicon.filled {
   transition: all 0.5s;
 }
 
-/* line 231, scss/custom.scss */
+/* line 253, scss/custom.scss */
 .img.imghover .imgoverlay {
   opacity: 1;
 }
 
-/* line 235, scss/custom.scss */
+/* line 257, scss/custom.scss */
 .img.imghover .imgoverlay a.expand {
   width: 60px;
   height: 60px;
@@ -264,63 +295,79 @@ li:hover .ability-score .glyphicon.filled {
   border-radius: 30px;
 }
 
-/* line 247, scss/custom.scss */
+/* line 269, scss/custom.scss */
 #submitButton:hover {
   background-color: #245682;
   border-color: transparent;
 }
 
-/* line 254, scss/custom.scss */
+/* line 276, scss/custom.scss */
+#contacts {
+  margin-top: 0;
+}
+
+/* line 279, scss/custom.scss */
+hr {
+  margin-bottom: 10px;
+}
+
+/* line 282, scss/custom.scss */
 #map-canvas {
-  height: 390px;
+  height: 413px;
   margin: 0;
   padding: 0px;
 }
 
-/* line 262, scss/custom.scss */
+/* line 290, scss/custom.scss */
 #footer {
   margin-top: 10px;
   color: #f4eccf;
   background-color: #428bca;
 }
 
+@media screen and (min-width: 1200px) {
+  /* line 302, scss/custom.scss */
+  body .container {
+    width: 970px;
+  }
+}
 @media screen and (max-width: 768px) {
-  /* line 276, scss/custom.scss */
+  /* line 309, scss/custom.scss */
   #topnav ul {
     height: 40px;
     overflow: hidden;
     display: table;
   }
-  /* line 281, scss/custom.scss */
+  /* line 314, scss/custom.scss */
   #topnav li {
     display: table-cell;
     width: 25%;
     height: 40px;
     text-align: center;
   }
-  /* line 286, scss/custom.scss */
+  /* line 319, scss/custom.scss */
   #topnav li a {
     display: inline;
     font-size: 1.5em;
     line-height: 40px;
   }
 
-  /* line 293, scss/custom.scss */
+  /* line 326, scss/custom.scss */
   #landingpage .overlay {
     background-color: transparent;
   }
 
-  /* line 297, scss/custom.scss */
+  /* line 330, scss/custom.scss */
   #lptext {
     margin-top: 15%;
   }
 
-  /* line 300, scss/custom.scss */
+  /* line 333, scss/custom.scss */
   #aboutme i {
     margin: 0 5px;
   }
 
-  /* line 304, scss/custom.scss */
+  /* line 337, scss/custom.scss */
   #aboutme img {
     margin: 5% auto;
   }

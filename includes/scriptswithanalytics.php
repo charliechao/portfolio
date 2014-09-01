@@ -17,7 +17,7 @@
     var s = skrollr.init();
     }       
   <!-- initialze fittext --> 
-  $("#lpname,#lptitle").fitText(1, { minFontSize: '40px', maxFontSize: '60px' });
+  $("#lpname").fitText(1, {maxFontSize: '50px' });
   </script>
 
   <!-- Google Analytics -->

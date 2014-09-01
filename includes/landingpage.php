@@ -4,11 +4,7 @@
         <div class="row ">
             <div class="col-xs-12 text-center" id="lptext">
 			<h1 id="lpname">Charlie Chao</h1>
-			 <div class="btn btn-info">
-                <a class="hidden-xs" href="#contacts" data-scroll>Say Hello</a>
-                <a class="visible-xs" href="tel:0210396580">Say Hello</a>
-            </div>
-			<h2 id="lptitle" class="hidden-xs">Web Developer</h2>
+			<h2 id="lptitle">FRONT-END DEVELOPER</h2>
         	</div>
         </div> 
     </div>

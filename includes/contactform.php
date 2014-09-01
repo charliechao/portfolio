@@ -1,8 +1,8 @@
+<h2 class="text-center">Contact Me</h2>
+<hr>
 <section >
 <div class="col-sm-6 hidden-xs">
-  <h2 class="text-center">Contact Me</h2>
-  <hr>
-                <form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactform">
+          <form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactform">
           <fieldset>
             <?php if(isset($hasError)) { //If errors are found ?>
               <p class="alert alert-danger">Please check if you've filled all the fields with valid information and try again. Thank you.</p>
@@ -18,8 +18,6 @@
               <input type="text" name="contactname" id="contactname" value="" class="form-control required" role="input" aria-required="true" 
               placeholder="Your name"/>
         </div>
-
-
             <div class="form-group">
               <label for="email">Email<span class="help-required">*</span></label>
               <input type="text" name="email" id="email" value="" class="form-control required email" role="input" aria-required="true"

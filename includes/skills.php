@@ -68,17 +68,6 @@
 				<span class="glyphicon glyphicon-star"></span>								
 			</span>
 		</li>				
-			
-		<li>
-			<span class="ability-title">Wordpress</span>
-			<span class="ability-score">							
-				<span class="glyphicon glyphicon-star filled"></span>							
-				<span class="glyphicon glyphicon-star filled"></span>							
-				<span class="glyphicon glyphicon-star filled"></span>							
-				<span class="glyphicon glyphicon-star"></span>							
-				<span class="glyphicon glyphicon-star "></span>								
-			</span>
-		</li>
 
 		<li>
 			<span class="ability-title">Shopify & Liquid</span>
@@ -129,7 +118,7 @@
 			<span class="ability-score">							
 				<span class="glyphicon glyphicon-star filled"></span>							
 				<span class="glyphicon glyphicon-star filled"></span>							
-				<span class="glyphicon glyphicon-star"></span>							
+				<span class="glyphicon glyphicon-star filled"></span>							
 				<span class="glyphicon glyphicon-star"></span>							
 				<span class="glyphicon glyphicon-star "></span>								
 			</span>
@@ -137,6 +126,17 @@
 			
 		<li>
 			<span class="ability-title">PHP & Ruby</span>
+			<span class="ability-score">							
+				<span class="glyphicon glyphicon-star filled"></span>							
+				<span class="glyphicon glyphicon-star filled"></span>							
+				<span class="glyphicon glyphicon-star"></span>							
+				<span class="glyphicon glyphicon-star"></span>							
+				<span class="glyphicon glyphicon-star "></span>								
+			</span>
+		</li>
+
+		<li>
+			<span class="ability-title">AngularJS</span>
 			<span class="ability-score">							
 				<span class="glyphicon glyphicon-star filled"></span>							
 				<span class="glyphicon glyphicon-star filled"></span>							
@@ -240,15 +240,15 @@
 			</li>					
 				
 			<li>
-				<span class="ability-title">Web Design</span>
-				<span class="ability-score">								
-					<span class="glyphicon glyphicon-star filled"></span>								
-					<span class="glyphicon glyphicon-star filled"></span>								
-					<span class="glyphicon glyphicon-star filled"></span>								
-					<span class="glyphicon glyphicon-star"></span>								
-					<span class="glyphicon glyphicon-star "></span>									
-				</span>
-			</li>				
+			<span class="ability-title">Wordpress</span>
+			<span class="ability-score">							
+				<span class="glyphicon glyphicon-star filled"></span>							
+				<span class="glyphicon glyphicon-star filled"></span>							
+				<span class="glyphicon glyphicon-star filled"></span>							
+				<span class="glyphicon glyphicon-star"></span>							
+				<span class="glyphicon glyphicon-star "></span>								
+			</span>
+			</li>	
 				
 			<li>
 				<span class="ability-title">UX & UI</span>

@@ -3,7 +3,6 @@
 <h2 class="text-center">Portfolio</h2>
     <hr>
   <div class="row">
-
     <div class="col-xs-12 col-sm-6 col-md-4 text-center" data-anchor-target="#works" data-600-top-top="opacity:0" data-300-top-top="opacity:1">
         <h4>Code Page</h4>
           <div class="img">
